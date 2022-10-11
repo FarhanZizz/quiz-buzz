@@ -3,6 +3,8 @@ import './App.css';
 import Main from './Layouts/Main';
 import Header from './Components/Header/Header';
 import QuizMenu from './Components/QuizMenu/QuizMenu';
+import Blog from './Components/Blog/Blog';
+import Statistics from './Components/Statistics/Statistics';
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +16,14 @@ function App() {
           path: "/",
           element: <div><Header></Header><QuizMenu></QuizMenu></div>,
         },
+        {
+          path: 'blog',
+          element: <Blog></Blog>
+        },
+        {
+          path: 'statistics',
+          element: <Statistics></Statistics>
+        }
       ]
     }
   ])
