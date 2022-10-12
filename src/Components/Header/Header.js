@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Header.css'
 const Header = () => {
     return (
@@ -11,7 +12,7 @@ const Header = () => {
                 <div className="max-w-md">
                     <h1 className='mb-5 text-4xl font-bold'>Welcome to Quiz Buzz</h1>
                     <p className="mb-5">Welcome to the world's largest quiz community. Play a quiz or create your own. Join a virtual or live event.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <a className="btn btn-primary">Get Started</a>
                 </div>
             </div>
         </div>
