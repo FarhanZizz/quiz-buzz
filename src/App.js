@@ -8,6 +8,7 @@ import Statistics from './Components/Statistics/Statistics';
 import QuizQuestions from './Components/QuizQuestions/QuizQuestions';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ErrorRoute from './Components/ErrorRoute/ErrorRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +40,10 @@ function App() {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizid}`)
           },
           element: <QuizQuestions></QuizQuestions>
+        },
+        {
+          path: '*',
+          element: <ErrorRoute></ErrorRoute>
         }
       ]
     }

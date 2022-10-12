@@ -34,8 +34,8 @@ const Question = ({ question }) => {
     return (
 
         <div className='mb-5'>
-            <div className="flex w-2/3 mx-auto items-center">
-                <h3 className="mb-5 font-semibold text-gray-900 dark:text-white w-2/3 mx-auto">{eachQuestion}</h3>
+            <div className="flex w-2/3 mx-auto">
+                <h3 className="mb-5 font-semibold text-gray-900 dark:text-white  mx-auto">{eachQuestion}</h3>
                 <button onClick={HandleAnsBtn} className='btn btn-circle btn-outline btn-sm'><FontAwesomeIcon className='w-3/6' icon={faEye} /></button>
             </div>
 
